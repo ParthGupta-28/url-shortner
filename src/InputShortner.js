@@ -10,7 +10,7 @@ export default function InputShortner() {
   return (
     <VStack pt="2rem">
       <InputGroup size="lg">
-        <Input type="text" variant="filled" size="lg" />
+        <Input placeholder="Enter Url" type="text" variant="filled" size="lg" />
         <InputRightAddon
           alignItems="stretch"
           padding={0}

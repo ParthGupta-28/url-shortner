@@ -1,6 +1,7 @@
 import { Heading, VStack } from "@chakra-ui/react";
 import "./App.css";
 import InputShortner from "./InputShortner";
+import Result from "./Result";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         URL Shortner
       </Heading>
       <InputShortner />
+      <Result />
     </VStack>
   );
 }
