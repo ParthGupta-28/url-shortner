@@ -1,6 +1,7 @@
 import { Heading, VStack } from "@chakra-ui/react";
 import { useState } from "react";
 import "./App.css";
+import BackGround from "./BackGround";
 import InputShortner from "./InputShortner";
 import Result from "./Result";
 
@@ -9,6 +10,7 @@ function App() {
 
   return (
     <VStack p="10%">
+      <BackGround />
       <Heading mb={4} fontWeight="extrabold" size="2xl">
         URL Shortner
       </Heading>
