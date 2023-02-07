@@ -19,7 +19,11 @@ export default function Result(props) {
   const { shortUrl } = { ...props };
 
   return (
-    <VStack pt="1rem" alignItems="stretch">
+    <VStack
+      pt="1rem"
+      alignItems="stretch"
+      maxW={{ base: "90vw", sm: "80vw", lg: "50vw", xl: "40vw" }}
+    >
       <InputGroup size="md">
         <Text
           color="gray.50"
