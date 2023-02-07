@@ -7,9 +7,9 @@ import Result from "./Result";
 
 function App() {
   const [shortUrl, setShortUrl] = useState("");
-  const { colorMode, toggleColorMode } = useColorMode("dark");
+  const { colorMode, toggleColorMode } = useColorMode();
 
-  useEffect(() => toggleColorMode, []);
+  useEffect(toggleColorMode, []);
 
   return (
     <VStack p="10%">
