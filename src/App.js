@@ -1,5 +1,5 @@
-import { Heading, VStack } from "@chakra-ui/react";
-import { useState } from "react";
+import { Heading, useColorMode, VStack } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import BackGround from "./BackGround";
 import InputShortner from "./InputShortner";
@@ -7,6 +7,9 @@ import Result from "./Result";
 
 function App() {
   const [shortUrl, setShortUrl] = useState("");
+  const { colorMode, toggleColorMode } = useColorMode("dark");
+
+  useEffect(() => toggleColorMode, []);
 
   return (
     <VStack p="10%">
